@@ -1,0 +1,88 @@
+SOAP — найдено больше 10 карточек
+Запрос
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:rpc="http://foo.bar/rpcliteralservice">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <rpc:search>
+         <query>Шортики</query>
+      </rpc:search>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Ответ
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://foo.bar/rpcliteralservice" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/">
+   <SOAP-ENV:Body>
+      <ns1:searchResponse>
+         <response_search>
+            <results>
+               <SOAP-ENC:Struct>
+                  <id>9</id>
+                  <name>Шортики 3</name>
+               </SOAP-ENC:Struct>
+               <SOAP-ENC:Struct>
+                  <id>36</id>
+                  <name>Шортики</name>
+               </SOAP-ENC:Struct>
+               <SOAP-ENC:Struct>
+                  <id>38</id>
+                  <name>Шортики</name>
+               </SOAP-ENC:Struct>
+               <SOAP-ENC:Struct>
+                  <id>39</id>
+                  <name>Шортики</name>
+               </SOAP-ENC:Struct>
+               <SOAP-ENC:Struct>
+                  <id>40</id>
+                  <name>Шортики</name>
+               </SOAP-ENC:Struct>
+               <SOAP-ENC:Struct>
+                  <id>41</id>
+                  <name>Шортики 2</name>
+               </SOAP-ENC:Struct>
+               <SOAP-ENC:Struct>
+                  <id>42</id>
+                  <name>Шортики 2</name>
+               </SOAP-ENC:Struct>
+               <SOAP-ENC:Struct>
+                  <id>43</id>
+                  <name>Шортики 2</name>
+               </SOAP-ENC:Struct>
+               <SOAP-ENC:Struct>
+                  <id>44</id>
+                  <name>Шортики 3</name>
+               </SOAP-ENC:Struct>
+               <SOAP-ENC:Struct>
+                  <id>45</id>
+                  <name>Шортики 2</name>
+               </SOAP-ENC:Struct>
+               <SOAP-ENC:Struct>
+                  <id>51</id>
+                  <name>Шортики</name>
+               </SOAP-ENC:Struct>
+               <SOAP-ENC:Struct>
+                  <id>52</id>
+                  <name>Шортики</name>
+               </SOAP-ENC:Struct>
+               <SOAP-ENC:Struct>
+                  <id>55</id>
+                  <name>Шортики</name>
+                </SOAP-ENC:Struct>
+               <SOAP-ENC:Struct>
+                  <id>56</id>
+                  <name>Шортики</name>
+                 </SOAP-ENC:Struct>
+               <SOAP-ENC:Struct>
+                  <id>59</id>
+                  <name>Шортики</name>
+               </SOAP-ENC:Struct>
+               <SOAP-ENC:Struct>
+                  <id>37</id>
+                  <name>Шортики</name>
+               </SOAP-ENC:Struct>
+            </results>
+            <iserror>0</iserror>
+            <error/>
+         </response_search>
+      </ns1:searchResponse>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
