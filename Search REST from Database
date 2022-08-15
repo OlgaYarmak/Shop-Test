@@ -1,0 +1,29 @@
+REST — select по id товара
+Запрос
+{
+    "sql_query": "select * from items where last_id = 38;"
+}
+
+Ответ
+{
+    "method": "/items/select",
+    "status": "ok",
+    "result": [
+        {
+            "last_id": "38",
+            "sizes": null,
+            "colors": null,
+            "title": "Шортики",
+            "price": "666",
+            "image": "/files/tmpfiles/c088022d128670b13a9b34b8c0207fa0.png",
+            "photos": null,
+            "category": "5",
+            "description": "Модное платье из новой коллекции!",
+            "sort": null,
+            "_lng": null,
+            "action": null,
+            "enable": "1",
+            "params": "dress"
+        }
+    ]
+}
