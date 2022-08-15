@@ -1,0 +1,19 @@
+REST — запрос в XML-формате
+Запрос
+<request>
+<id>9</id>
+<name>Шортики 3</name>
+<section>Платья</section>
+<description>тыгыдык</description>
+<size>44</size>
+<color>RED</color>
+<price>666</price>
+<params>dress, тест</params>
+</request>
+
+Ответ
+{
+    "method": "/items/update",
+    "status": "ok",
+    "result": "Товар обновлен!"
+}
