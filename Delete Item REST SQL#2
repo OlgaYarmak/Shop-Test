@@ -1,0 +1,14 @@
+REST — ошибка, товар не найден
+Запрос
+{
+    "id": 62
+}
+
+Ответ
+{
+    "method": "/items/delete/",
+    "status": "error",
+    "field_error": "id",
+    "error": "item_with_id_not_found",
+    "message": "Товар с ID 62 не найден!"
+}
