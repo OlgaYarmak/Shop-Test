@@ -1,0 +1,82 @@
+SOAP — select по id товара
+Запрос
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:rpc="http://foo.bar/rpcliteralservice">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <rpc:select>
+         <sql_query>select * from items where last_id = 38;</sql_query>
+      </rpc:select>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Ответ
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://foo.bar/rpcliteralservice" xmlns:ns2="http://xml.apache.org/xml-soap">
+   <SOAP-ENV:Body>
+      <ns1:selectResponse>
+         <response_select>
+            <results_query>
+               <ns2:Map>
+                  <item>
+                     <key>last_id</key>
+                     <value>38</value>
+                  </item>
+                  <item>
+                     <key>sizes</key>
+                     <value/>
+                  </item>
+                  <item>
+                     <key>colors</key>
+                     <value/>
+                  </item>
+                  <item>
+                     <key>title</key>
+                     <value>Шортики</value>
+                  </item>
+                  <item>
+                     <key>price</key>
+                     <value>666</value>
+                  </item>
+                  <item>
+                     <key>image</key>
+                     <value>/files/tmpfiles/c088022d128670b13a9b34b8c0207fa0.png</value>
+                  </item>
+                  <item>
+                     <key>photos</key>
+                     <value/>
+                  </item>
+                  <item>
+                     <key>category</key>
+                     <value>5</value>
+                  </item>
+                  <item>
+                     <key>description</key>
+                     <value>Модное платье из новой коллекции!</value>
+                  </item>
+                  <item>
+                     <key>sort</key>
+                     <value/>
+                  </item>
+                  <item>
+                     <key>_lng</key>
+                     <value/>
+                  </item>
+                  <item>
+                     <key>action</key>
+                     <value/>
+                  </item>
+                  <item>
+                     <key>enable</key>
+                     <value>1</value>
+                  </item>
+                  <item>
+                     <key>params</key>
+                     <value>dress</value>
+                  </item>
+               </ns2:Map>
+            </results_query>
+            <iserror>0</iserror>
+            <error/>
+         </response_select>
+      </ns1:selectResponse>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
