@@ -1,0 +1,66 @@
+REST — найдено больше 10 карточек (XML в ответе)
+Запрос
+{
+    "query": "Шортики"
+}
+
+Ответ
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+    <method>/items/search</method>
+    <status>ok</status>
+    <result>
+        <item>
+            <last_id>9</last_id>
+            <title>Шортики 3</title>
+        </item>
+        <item>
+            <last_id>36</last_id>
+            <title>Шортики</title>
+        </item>
+        <item>
+            <last_id>38</last_id>
+            <title>Шортики</title>
+        </item>
+        <item>
+            <last_id>39</last_id>
+            <title>Шортики</title>
+        </item>
+        <item>
+            <last_id>40</last_id>
+            <title>Шортики</title>
+        </item>
+        <item>
+            <last_id>41</last_id>
+            <title>Шортики 2</title>
+        </item>
+        <item>
+            <last_id>42</last_id>
+            <title>Шортики 2</title>
+        </item>
+        <item>
+            <last_id>43</last_id>
+            <title>Шортики 2</title>
+        </item>
+        <item>
+            <last_id>44</last_id>
+            <title>Шортики 3</title>
+        </item>
+        <item>
+            <last_id>45</last_id>
+            <title>Шортики 2</title>
+        </item>
+        <item>
+            <last_id>51</last_id>
+            <title>Шортики</title>
+        </item>
+        <item>
+            <last_id>52</last_id>
+            <title>Шортики</title>
+        </item>
+        <item>
+            <last_id>37</last_id>
+            <title>Шортики</title>
+        </item>
+    </result>
+</response>
