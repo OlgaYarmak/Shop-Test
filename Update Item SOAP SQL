@@ -1,0 +1,30 @@
+SOAP — обновление товара
+Запрос
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:rpc="http://foo.bar/rpcliteralservice">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <rpc:update>
+		<id>9</id>
+		<name>Шортики 3</name>
+		<section>Платья</section>
+		<description>тыгыдык</description>
+		<size>44</size>
+		<color>RED</color>
+		<price>666</price>
+		<params>dress, тест</params>
+      </rpc:update>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Ответ
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://foo.bar/rpcliteralservice">
+   <SOAP-ENV:Body>
+      <ns1:updateResponse>
+         <response_update>
+            <iserror>0</iserror>
+            <error/>
+            <message>Товар обновлен!</message>
+         </response_update>
+      </ns1:updateResponse>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
