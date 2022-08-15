@@ -1,0 +1,21 @@
+REST — успешный вызов
+Запрос
+{
+    "id": 51
+}
+
+Ответ
+{
+    "method": "/items/update",
+    "status": "ok",
+    "result": {
+        "id": "51",
+        "name": "Шортики",
+        "section": "Платья",
+        "description": "Модное платье из новой коллекции!",
+        "color": "RED",
+        "size": "44",
+        "params": "",
+        "photo": "http://shop.bugred.ruhttps://via.placeholder.com/300x300"
+    }
+}
