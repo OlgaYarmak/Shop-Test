@@ -1,0 +1,23 @@
+SOAP — товар удален
+Запрос
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:rpc="http://foo.bar/rpcliteralservice">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <rpc:delete>
+         <id>63</id>
+      </rpc:delete>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Ответ
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://foo.bar/rpcliteralservice">
+   <SOAP-ENV:Body>
+      <ns1:deleteResponse>
+         <response_delete>
+            <iserror>0</iserror>
+            <error/>
+            <message>Товар с ID 63 успешно удален</message>
+         </response_delete>
+      </ns1:deleteResponse>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
