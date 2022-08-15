@@ -1,0 +1,34 @@
+SOAP — успешный вызов
+Запрос
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:rpc="http://foo.bar/rpcliteralservice">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <rpc:get>
+         <id>37</id>
+      </rpc:get>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Ответ
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://foo.bar/rpcliteralservice">
+   <SOAP-ENV:Body>
+      <ns1:getResponse>
+         <response_get>
+            <result_item>
+               <id>37</id>
+               <name>Шортики</name>
+               <section>Категория 1</section>
+               <description>ккк</description>
+               <color>Красный</color>
+               <size>30</size>
+               <price>555</price>
+               <params/>
+               <photo>http://shop.bugred.ru/files/tmpfiles/634bbafc87130e35088f677ed77e65c3.jpg</photo>
+               <photos/>
+            </result_item>
+            <iserror>0</iserror>
+            <error/>
+         </response_get>
+      </ns1:getResponse>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
